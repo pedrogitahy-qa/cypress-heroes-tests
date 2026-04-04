@@ -1,0 +1,10 @@
+{
+    "SendMoney":{
+        "ValidAmount": "35",
+        "ValidAccount": "Ted Parisian"
+    },
+
+    "SendMoneyInvalid":{
+        "InvalidAmount": "2000",
+        "InvalidAccount": "Ted Parisian"
+    }}

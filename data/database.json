@@ -3,12 +3,12 @@
     {
       "id": "uBmeaz5pX",
       "uuid": "3b63b436-cacc-457a-a3e8-c962ef9838ac",
-      "firstName": "Ted",
-      "lastName": "Parisian",
+      "firstName": "New First Name",
+      "lastName": "New Last Name",
       "username": "Heath93",
       "password": "$2a$10$nSaCsTPTtbbPTnFXBH0GZu0ExpNMud3d1IuKOC/6a9gwAHkdhppeu",
-      "email": "Santos.Runte65@gmail.com",
-      "phoneNumber": "398-225-9900",
+      "email": "email@email.com",
+      "phoneNumber": "6155551212",
       "avatar": "https://avatars.dicebear.com/api/human/uBmeaz5pX.svg",
       "defaultPrivacyLevel": "public",
       "balance": 150953,
@@ -74,6 +74,39 @@
       "balance": 49474,
       "createdAt": "2023-12-07T04:39:38.383Z",
       "modifiedAt": "2024-03-07T00:07:36.510Z"
+    },
+    {
+      "id": "Ad98E8zq5",
+      "uuid": "4f81d57f-9af6-4a93-ac5d-101e4e6d23d4",
+      "firstName": "Pedro",
+      "lastName": "Gitahy",
+      "username": "pedrogitahy",
+      "password": "$2a$10$YxksBrgg/MD10UsudX6sDuTyrSWo43tM22XuKhx1EJC0msOou.Gi2",
+      "balance": 0,
+      "createdAt": "2026-04-04T04:44:37.214Z",
+      "modifiedAt": "2026-04-04T04:44:37.214Z"
+    },
+    {
+      "id": "S-lHINC8r",
+      "uuid": "e6dbed9a-dcf5-4ce4-a766-fcd69834beeb",
+      "firstName": "Pedro",
+      "lastName": "Gitahy",
+      "username": "pedrogitahy",
+      "password": "$2a$10$HJZ6913a6Osx.J3ktvRYFutxRqY24mBIfy.fbhEyTFm2k6WlEgYsW",
+      "balance": 0,
+      "createdAt": "2026-04-04T04:54:31.477Z",
+      "modifiedAt": "2026-04-04T04:54:31.477Z"
+    },
+    {
+      "id": "VrU4HNVT_",
+      "uuid": "c23469ba-cb22-40d9-9e25-99929a0f71cc",
+      "firstName": "Pedro",
+      "lastName": "Gitahy",
+      "username": "pedrogitahy",
+      "password": "$2a$10$9jlVq25Ewiz6e/m1hgnd.uryboHEwVDxgYNbu6kLAu4pAAxaHDA3S",
+      "balance": 0,
+      "createdAt": "2026-04-04T04:55:26.248Z",
+      "modifiedAt": "2026-04-04T04:55:26.248Z"
     }
   ],
   "contacts": [

@@ -1,0 +1,22 @@
+{
+    "validUser":{
+        "username": "Reyes.Osinski",
+        "password": "s3cret"
+    },
+
+    "invalidUser":{
+        "username": "Test",
+        "password": "test123"
+    },
+
+    "signUpUser":{
+        "firstName": "Pedro",
+        "lastName": "Gitahy",
+        "username": "pedrogitahy",
+        "password": "pedro123"
+    },
+
+    "invalidCredentials":{
+        "password": "123"
+    }
+    }
