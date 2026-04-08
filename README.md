@@ -15,9 +15,9 @@ The project focuses on practicing UI test automation using maintainable testing 
 
 ## About the Project
 
-Cypress Heroes is a demo application that allows users to interact with heroes through actions such as liking, hiring, creating, editing, and deleting heroes.
+This project demonstrates end-to-end UI test automation using Cypress applied to the Cypress Heroes demo application.
 
-This project was created to automate core user flows and demonstrate automation practices commonly used in QA engineering.
+The goal of this project is to showcase practical automation techniques used in modern QA workflows, focusing on maintainable test architecture and realistic user interaction scenarios.
 
 ---
 
@@ -75,3 +75,32 @@ The test suite covers the following functional areas:
 ---
 
 ## Project Structure
+
+## Test Coverage
+
+The automation suite validates the main user flows of the Cypress Heroes application.
+
+Covered functionalities include:
+
+- Authentication flows
+- Hero interaction actions
+- Hero creation and deletion
+- Hero editing and validation scenarios
+- UI interaction validation
+
+---
+
+## Automation Strategy
+
+The test suite was designed with maintainability and readability in mind.
+
+Key design decisions include:
+
+- Use of the Page Object Model (POM) pattern
+- Separation between test logic and UI interactions
+- Reusable fixtures for test data
+- Scenario-based test organization
+
+
+
+
