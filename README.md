@@ -1,6 +1,10 @@
 # Cypress Heroes Test Automation
 
 End-to-end automated tests for the Cypress Heroes demo application using Cypress and the Page Object Model (POM) pattern.
+⚠️ The test project is currently available in the `develop` branch.
+
+You can access the full test suite here:
+https://github.com/pedrogitahy-qa/cypress-heroes-tests/tree/develop/cypress-heroes-automation-tests
 
 ## Overview
 
