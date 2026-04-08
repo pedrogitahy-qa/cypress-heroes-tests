@@ -48,6 +48,34 @@ The automated test suite covers the following scenarios:
 - Chance.js
 - Page Object Model (POM)
 
+## Key Concepts Applied
+
+This project was structured using common test automation practices:
+
+- **Page Object Model (POM)** to separate page interactions from test logic
+- **Fixtures** for centralized test data management
+- **Dynamic data generation** using Chance.js
+- **Scenario-based test structure** using Cypress spec files
+
+## Test Cases Implemented
+
+The automated suite currently covers:
+
+| Test Case | Description |
+|-----------|-------------|
+| CT-01 | Admin login |
+| CT-02 | Default user login |
+| CT-03 | Like button without authentication |
+| CT-04 | Hire button without authentication |
+| CT-05 | Like hero as admin |
+| CT-06 | Like hero as default user |
+| CT-07 | Hire hero as admin |
+| CT-08 | Hire hero as default user |
+| CT-09 | Create hero |
+| CT-10 | Delete hero |
+| CT-11 | Edit hero |
+| CT-12 | Invalid hero edit validation |
+
 ## Project Structure
 
 ```bash
@@ -75,5 +103,8 @@ cypress/
     likeHeroPage.js
     hireHeroPage.js
     createHeroPage.js
+
+
+
     deleteHeroPage.js
     editHeroPage.js
