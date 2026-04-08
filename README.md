@@ -1,46 +1,25 @@
-# Cypress Heroes Test Automation
+# Cypress End-to-End Test Automation — Cypress Heroes
 
-End-to-end automated tests for the Cypress Heroes demo application using Cypress and the Page Object Model (POM) pattern.
-⚠️ The test project is currently available in the `develop` branch.
+## Test Automation Project
 
-You can access the full test suite here:
-https://github.com/pedrogitahy-qa/cypress-heroes-tests/tree/develop/cypress-heroes-automation-tests
+This repository contains automated end-to-end test scenarios developed using Cypress for the Cypress Heroes demo application.
 
-## Overview
+The project was created to practice UI test automation using a structured and maintainable approach, applying the Page Object Model (POM) pattern and reusable test data.
 
-This project was created to practice UI test automation with Cypress by covering realistic user interactions in the Cypress Heroes application.
+The goal of this project is to demonstrate practical test automation skills by covering core user interactions such as authentication, engagement actions, hero creation, editing, and deletion.
 
-The test suite was organized using Page Objects to improve readability, reuse, and maintenance.
+## Project Scope
 
-## Application Under Test
+Test automation covering:
 
-Cypress Heroes is a demo application where users can interact with heroes through actions such as:
+- Login scenarios
+- Heroes interaction flows
+- Hero creation
+- Hero editing
+- Hero deletion
+- Invalid data validation
 
-- login
-- liking heroes
-- hiring heroes
-- creating new heroes
-- editing hero data
-- deleting heroes
-
-## Test Scenarios Covered
-
-The automated test suite covers the following scenarios:
-
-1. Admin login
-2. Default user login
-3. Like button without authentication
-4. Hire button without authentication
-5. Like hero as admin
-6. Like hero as default user
-7. Hire hero as admin
-8. Hire hero as default user
-9. Create a new hero
-10. Delete a hero
-11. Edit a hero successfully
-12. Validate hero editing with invalid data
-
-## Tech Stack
+## Stack
 
 - Cypress
 - JavaScript
@@ -48,18 +27,7 @@ The automated test suite covers the following scenarios:
 - Chance.js
 - Page Object Model (POM)
 
-## Key Concepts Applied
-
-This project was structured using common test automation practices:
-
-- **Page Object Model (POM)** to separate page interactions from test logic
-- **Fixtures** for centralized test data management
-- **Dynamic data generation** using Chance.js
-- **Scenario-based test structure** using Cypress spec files
-
-## Test Cases Implemented
-
-The automated suite currently covers:
+## Test Scenarios Covered
 
 | Test Case | Description |
 |-----------|-------------|
@@ -73,8 +41,8 @@ The automated suite currently covers:
 | CT-08 | Hire hero as default user |
 | CT-09 | Create hero |
 | CT-10 | Delete hero |
-| CT-11 | Edit hero |
-| CT-12 | Invalid hero edit validation |
+| CT-11 | Edit hero successfully |
+| CT-12 | Validate hero editing with invalid data |
 
 ## Project Structure
 
@@ -103,8 +71,5 @@ cypress/
     likeHeroPage.js
     hireHeroPage.js
     createHeroPage.js
-
-
-
     deleteHeroPage.js
     editHeroPage.js
