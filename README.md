@@ -75,7 +75,7 @@ The test suite covers the following functional areas:
 | **CT-05** Like hero as admin | **CT-11** Edit hero |
 | **CT-06** Like hero as default user | **CT-12** Invalid hero edit validation |
 
-### Authentication Flow
+### Authentication Flow — CT-01 / CT-02
 
 This scenario demonstrates user authentication using both the **admin** and **default user** accounts.
 
@@ -83,13 +83,25 @@ The tests validate successful login and correct access to authenticated features
 
 ![Authentication Flow Demo](./docs/gifs/authentication-flow.gif)
 
-### Interaction Without Authentication
+### Interaction Without Authentication (CT-03, CT-04)
 
 This scenario validates application behavior when a user attempts to interact with heroes without being authenticated.
 
 The tests confirm that protected actions such as **liking** and **hiring heroes** require login.
 
 ![Interaction Without Authentication](./docs/gifs/interaction-without-auth.gif)
+
+
+
+
+
+
+
+
+
+
+
+
 
 ---
 
