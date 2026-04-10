@@ -133,34 +133,32 @@ The tests verify both successful updates and validation behavior when invalid da
 
 The automation project follows a structured organization to keep tests maintainable, readable, and scalable.
 
-The test suite is organized using the **Page Object Model (POM)** pattern, separating page interactions from test logic and improving code reuse.
+The test suite is organized using the `Page Object Model (POM)` pattern, separating page interactions from test logic and improving code reuse.
 
+```text
 cypress/
- ├── e2e/
- │   ├── authentication.cy.js
- │   ├── hero-like.cy.js
- │   ├── hero-hire.cy.js
- │   ├── hero-management.cy.js
- │
- ├── pages/
- │   ├── loginPage.js
- │   ├── heroesPage.js
- │
- ├── fixtures/
- │   └── users.json
- │
- ├── support/
- │   ├── commands.js
- │   └── e2e.js
-
+├── e2e/
+│   ├── authentication.cy.js
+│   ├── hero-like.cy.js
+│   ├── hero-hire.cy.js
+│   └── hero-management.cy.js
+├── pages/
+│   ├── loginPage.js
+│   └── heroesPage.js
+├── fixtures/
+│   └── users.json
+├── support/
+│   ├── commands.js
+│   └── e2e.js
 docs/
- └── gifs/
-     ├── authentication-flow.gif
-     ├── interaction-without-auth.gif
-     ├── hero-like-actions.gif
-     ├── hero-hiring-flow.gif
-     ├── hero-management.gif
-     └── hero-edit-validation.gif
+└── gifs/
+    ├── authentication-flow.gif
+    ├── interaction-without-auth.gif
+    ├── hero-like-actions.gif
+    ├── hero-hiring-flow.gif
+    ├── hero-management.gif
+    └── hero-edit-validation.gif
+```
 
 Each directory has a specific role in the test architecture:
 
