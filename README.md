@@ -16,7 +16,7 @@ The goal of this project is to demonstrate practical experience with automated t
 
 ---
 
-## About the Project
+## About the Cypress Heroes
 
 Cypress Heroes is an open-source demo application designed to support UI test automation practice through realistic frontend interactions.
 
