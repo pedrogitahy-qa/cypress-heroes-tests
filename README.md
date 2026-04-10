@@ -75,7 +75,7 @@ The test suite covers the following functional areas:
 | **CT-05** Like hero as admin | **CT-11** Edit hero |
 | **CT-06** Like hero as default user | **CT-12** Invalid hero edit validation |
 
-### Authentication Flow — CT-01 / CT-02
+### Authentication Flow (CT-01 / CT-02)
 
 This scenario demonstrates user authentication using both the **admin** and **default user** accounts.
 
@@ -91,17 +91,41 @@ The tests confirm that protected actions such as **liking** and **hiring heroes*
 
 ![Interaction Without Authentication](./docs/gifs/interaction-without-auth.gif)
 
+### Hero Interaction — Like Actions (CT-05, CT-06)
 
+These scenarios validate the ability for authenticated users to like heroes within the application.  
+Both the **admin** and **default user** accounts interact with the hero list and perform the like action.
 
+The tests ensure that the system correctly registers user interactions and updates the interface to reflect the new like state.
 
+![Hero Like Actions](./docs/gifs/hero-like-actions.gif)
 
+### Hero Hiring Flow (CT-07, CT-08)
 
+These scenarios demonstrate the hero hiring functionality available to authenticated users.  
+Both user roles interact with the hero interface and execute the hiring action.
 
+The tests validate that the application correctly processes the hiring request and updates the system state accordingly.
 
+![Hero Hiring Flow](./docs/gifs/hero-hiring-flow.gif)
 
+### Hero Management — Creation & Deletion (CT-09, CT-10)
 
+These scenarios validate the hero management workflow within the application.  
+The tests cover the creation of a new hero and the deletion of an existing one.
 
+The automation ensures that the system correctly handles CRUD operations and reflects the changes in the user interface.
 
+![Hero Creation and Deletion](./docs/gifs/hero-management.gif)
+
+### Hero Editing & Validation (CT-11, CT-12)
+
+These scenarios validate the hero editing functionality provided by the application.  
+Users modify hero information through the edit interface.
+
+The tests verify both successful updates and validation behavior when invalid data is submitted.
+
+![Hero Editing and Validation](./docs/gifs/hero-edit-validation.gif)
 
 ---
 
