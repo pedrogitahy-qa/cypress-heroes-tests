@@ -218,6 +218,8 @@ Covered functionalities include:
 - Hero editing and validation scenarios
 - UI interaction validation
 
+These scenarios ensure coverage of the main user interactions available in the Cypress Heroes application, validating both successful flows and validation behavior.
+
 ---
 
 ## Automation Strategy
