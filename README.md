@@ -3,6 +3,7 @@
 ![Cypress](https://img.shields.io/badge/Tested%20With-Cypress-04C38E)
 ![JavaScript](https://img.shields.io/badge/Language-JavaScript-yellow)
 ![Node.js](https://img.shields.io/badge/Runtime-Node.js-green)
+
 ---
 
 ## Test Automation Project
@@ -167,6 +168,43 @@ Each directory has a specific role in the test architecture:
 - **fixtures** – stores reusable test data  
 - **support** – contains custom commands and global Cypress configuration  
 - **docs/gifs** – stores demonstration animations used in the README
+
+---
+
+## How to Run the Tests
+
+This project uses Cypress to execute automated end-to-end tests against the Cypress Heroes application.
+
+Follow the steps below to execute the automated tests locally.
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/pedrogitahy-qa/cypress-heroes-tests
+cd cypress-heroes-tests
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Open Cypress Test Runner
+
+```bash
+npx cypress open
+```
+
+### 4. Run tests in headless mode
+
+```bash
+npx cypress run
+```
+
+These commands allow you to execute the full automated test suite locally using Cypress.
+
+---
 
 ## Test Coverage
 
