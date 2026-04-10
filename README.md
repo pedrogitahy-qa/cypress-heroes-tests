@@ -7,29 +7,38 @@
 
 ## Test Automation Project
 
-This repository contains automated end-to-end test scenarios developed using Cypress for the Cypress Heroes demo application.
+This repository contains automated end-to-end test scenarios developed using Cypress as part of the QA training program Guardião da Qualidade (LumeStack).
 
-The project focuses on practicing UI test automation using maintainable testing practices and organized test structure.
+The project is based on Cypress Heroes, an open-source demo application created to support UI test automation practice through realistic user interactions such as authentication, hero management, and user engagement features.
+
+The goal of this project is to demonstrate practical experience with automated testing by implementing organized and maintainable end-to-end tests, covering both positive and negative scenarios within a realistic application environment.
 
 ---
 
 ## About the Project
 
-This project demonstrates end-to-end UI test automation using Cypress applied to the Cypress Heroes demo application.
+Cypress Heroes is an open-source demo application designed to support UI test automation practice through realistic frontend interactions.
 
-The goal of this project is to showcase practical automation techniques used in modern QA workflows, focusing on maintainable test architecture and realistic user interaction scenarios.
+The application simulates common user behaviors such as authentication, liking heroes, hiring heroes, and performing CRUD operations, making it a practical environment for learning and validating end-to-end testing strategies.
+
+Original project repository:
+
+https://github.com/cypress-io/cypress-heroes
 
 ---
 
 ## Testing Approach
 
-The test suite was designed following automation best practices:
+This project was implemented using Cypress with the `Page Object Model (POM)` to improve test maintainability, readability, and separation between test logic and UI interactions.
 
-- Page Object Model (POM) for better maintainability
+The automation suite was designed to simulate realistic user behaviors while keeping the test architecture modular and scalable, allowing new scenarios to be added without increasing code complexity.
+
+The test suite follows these automation practices:
+
+- `Page Object Model (POM)` for better maintainability
 - Separation between test logic and page interactions
 - Use of fixtures for reusable data
 - Scenario-based test structure
-
 ---
 
 ## Technologies Used
@@ -57,20 +66,14 @@ The test suite covers the following functional areas:
 
 ## Demonstrated Test Scenarios
 
-| Test Case | Description |
-|-----------|-------------|
-| CT-01 | Admin login |
-| CT-02 | Default user login |
-| CT-03 | Like button without authentication |
-| CT-04 | Hire button without authentication |
-| CT-05 | Like hero as admin |
-| CT-06 | Like hero as default user |
-| CT-07 | Hire hero as admin |
-| CT-08 | Hire hero as default user |
-| CT-09 | Create hero |
-| CT-10 | Delete hero |
-| CT-11 | Edit hero |
-| CT-12 | Invalid hero edit validation |
+| | |
+|---|---|
+| **CT-01** Admin login | **CT-07** Hire hero as admin |
+| **CT-02** Default user login | **CT-08** Hire hero as default user |
+| **CT-03** Like button without authentication | **CT-09** Create hero |
+| **CT-04** Hire button without authentication | **CT-10** Delete hero |
+| **CT-05** Like hero as admin | **CT-11** Edit hero |
+| **CT-06** Like hero as default user | **CT-12** Invalid hero edit validation |
 
 ---
 
