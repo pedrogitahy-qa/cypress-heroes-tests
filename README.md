@@ -67,14 +67,14 @@ The test suite covers the following functional areas:
 
 ## Demonstrated Test Scenarios
 
-| | |
-|---|---|
-| **CT-01** Admin login | **CT-07** Hire hero as admin |
-| **CT-02** Default user login | **CT-08** Hire hero as default user |
-| **CT-03** Like button without authentication | **CT-09** Create hero |
-| **CT-04** Hire button without authentication | **CT-10** Delete hero |
-| **CT-05** Like hero as admin | **CT-11** Edit hero |
-| **CT-06** Like hero as default user | **CT-12** Invalid hero edit validation |
+| Scenario | Scenario |
+|--------|--------|
+| CT-01 Admin login | CT-02 Default user login |
+| CT-03 Like button without authentication | CT-04 Hire button without authentication |
+| CT-05 Like hero as admin | CT-06 Like hero as default user |
+| CT-07 Hire hero as admin | CT-08 Hire hero as default user |
+| CT-09 Create hero | CT-10 Delete hero |
+| CT-11 Edit hero | CT-12 Invalid hero edit validation |
 
 ### Authentication Flow (CT-01 / CT-02)
 
