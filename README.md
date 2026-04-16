@@ -179,6 +179,15 @@ cypress/
 ├── support/
 │   ├── commands.js
 │   └── e2e.js
+
+docs/
+├── 01-CT01-CT02-authentication-flow.gif
+├── 02-CT03-CT04-unauthenticated-user-actions.gif
+├── 03-CT05-CT06-hero-like-actions.gif
+├── 04-CT07-CT08-hero-hiring-flow.gif
+├── 05-CT09-CT10-hero-management-actions.gif
+└── 06-CT11-CT12-hero-edit-validation.gif
+
 cypress.config.js
 package.json
 ```
@@ -189,8 +198,7 @@ Each directory has a specific role in the test architecture:
 - **pages** – implements the Page Object Model abstraction for UI interactions  
 - **fixtures** – stores reusable test data  
 - **support** – contains custom commands and global Cypress configuration  
-- **docs/gifs** – stores demonstration animations used in the README  
-
+- **docs/gifs** - docs – stores demonstration GIFs used in the README
 ---
 
 ## How to Run the Tests
