@@ -90,6 +90,8 @@ The tests validate successful login and correct access to authenticated features
 
 This scenario validates application behavior when a user attempts to interact with heroes without being authenticated.
 
+![Unauthenticated Actions](./docs/02-CT03-CT04-unauthenticated-user-actions.gif)
+
 The tests confirm that protected actions such as liking and hiring heroes require login.
 
 ---
@@ -97,6 +99,8 @@ The tests confirm that protected actions such as liking and hiring heroes requir
 ### Hero Interaction — Like Actions (CT-05, CT-06)
 
 These scenarios validate the ability for authenticated users to like heroes within the application.
+
+![Hero Like](./docs/03-CT05-CT06-hero-like-actions.gif)
 
 Both the admin and default user accounts interact with the hero list and perform the like action.
 
@@ -108,6 +112,8 @@ The tests ensure that the system correctly registers user interactions and updat
 
 These scenarios demonstrate the hero hiring functionality available to authenticated users.
 
+![Hero Hiring](./docs/04-CT07-CT08-hero-hiring-flow.gif)
+
 Both user roles interact with the hero interface and execute the hiring action.
 
 The tests validate that the application correctly processes the hiring request and updates the system state accordingly.
@@ -118,6 +124,8 @@ The tests validate that the application correctly processes the hiring request a
 
 These scenarios validate the hero management workflow within the application.
 
+![Hero Management](./docs/05-CT09-CT10-hero-management-actions.gif)
+
 The tests cover the creation of a new hero and the deletion of an existing one.
 
 The automation ensures that the system correctly handles CRUD operations and reflects the changes in the user interface.
@@ -127,6 +135,8 @@ The automation ensures that the system correctly handles CRUD operations and ref
 ### Hero Editing & Validation (CT-11, CT-12)
 
 These scenarios validate the hero editing functionality provided by the application.
+
+![Hero Edit](./docs/06-CT11-CT12-hero-edit-validation.gif)
 
 Users modify hero information through the edit interface.
 
