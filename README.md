@@ -169,7 +169,7 @@ cypress/
 │   └── e2e.js
 cypress.config.js
 package.json
-
+```
 
 Each directory has a specific role in the test architecture:
 
@@ -178,7 +178,6 @@ Each directory has a specific role in the test architecture:
 - **fixtures** – stores reusable test data  
 - **support** – contains custom commands and global Cypress configuration  
 - **docs/gifs** – stores demonstration animations used in the README  
-```
 
 ---
 
