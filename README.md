@@ -80,6 +80,8 @@ Page objects were used to encapsulate interactions such as login, liking heroes,
 
 This scenario demonstrates user authentication using both the admin and default user accounts.
 
+![Authentication Flow](./docs/01-CT01-CT02-authentication-flow.gif)
+
 The tests validate successful login and correct access to authenticated features.
 
 ---
