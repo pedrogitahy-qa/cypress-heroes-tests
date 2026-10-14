@@ -198,7 +198,7 @@ Each directory has a specific role in the test architecture:
 - **pages** – implements the Page Object Model abstraction for UI interactions  
 - **fixtures** – stores reusable test data  
 - **support** – contains custom commands and global Cypress configuration  
-- **docs/gifs** - docs – stores demonstration GIFs used in the README
+- **docs** - stores GIF demonstrations of the automated test scenarios
 ---
 
 ## How to Run the Tests
