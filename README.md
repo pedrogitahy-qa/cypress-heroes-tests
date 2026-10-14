@@ -203,34 +203,105 @@ Each directory has a specific role in the test architecture:
 
 ## How to Run the Tests
 
-This project uses Cypress to execute automated end-to-end tests against the Cypress Heroes application.
+This repository contains an independent Cypress end-to-end test suite for the [Cypress Heroes application](https://github.com/cypress-io/cypress-heroes).
 
-Follow the steps below to execute the automated tests locally.
+The application under test is maintained in a separate repository and must be installed and running locally before executing the automated tests.
 
-### 1. Clone the repository
+### Prerequisites
+
+Before running the tests, ensure that the following tools are installed:
+
+- Git
+- Node.js and npm
+- A compatible browser for Cypress E2E testing
+
+### 1. Clone and set up the Cypress Heroes application
+
+Open a terminal and clone the original application repository:
 
 ```bash
-git clone https://github.com/pedrogitahy-qa/cypress-heroes-tests
+git clone https://github.com/cypress-io/cypress-heroes.git
+cd cypress-heroes
+```
+
+Install the application dependencies and complete the initial setup:
+
+```bash
+npm install
+npm run setup
+```
+
+The setup command prepares the database and other resources required by the application.
+
+Start the application:
+
+```bash
+npm run dev
+```
+
+This command starts both the frontend and backend services.
+
+- Frontend: http://localhost:3000
+- Backend: http://localhost:3001
+
+Verify that the application is accessible at `http://localhost:3000` before proceeding.
+
+**Keep this terminal running while executing the tests.**
+
+### 2. Clone the test automation repository
+
+Open a second terminal and execute:
+
+```bash
+git clone https://github.com/pedrogitahy-qa/cypress-heroes-tests.git
 cd cypress-heroes-tests
 ```
 
-### 2. Install dependencies
+### 3. Install test dependencies
 
 ```bash
 npm install
 ```
 
-###3. Open Cypress Test Runner
+This installs the dependencies declared in the project's `package.json`, including Cypress.
+
+### 4. Open Cypress Test Runner
 
 ```bash
 npx cypress open
 ```
 
-###4. Run tests in headless mode
+Select E2E Testing, choose an available browser, and run the desired test specifications.
+
+The automated scenarios are located in `cypress/e2e/heroes/`.
+
+### 5. Run tests in headless mode
+
+Alternatively, execute:
 
 ```bash
 npx cypress run
 ```
+
+This runs the automated test suite without opening the interactive Cypress Test Runner.
+
+The Cypress Heroes application must remain running during test execution.
+
+### Troubleshooting
+
+**Cypress cannot connect to localhost:3000**
+
+Verify that the original Cypress Heroes application was started successfully using `npm run dev` in its own repository.
+
+**Application setup or database errors**
+
+Review the original application's installation instructions and verify that `npm run setup` completed successfully.
+
+**Tests fail during execution**
+
+Check that both application services are running and that the test environment has been initialized correctly.
+
+For additional application configuration details, consult the [official Cypress Heroes documentation](https://github.com/cypress-io/cypress-heroes).
 
 ---
 
