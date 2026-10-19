@@ -8,5 +8,8 @@ describe('CT-01 - Admin login', () => {
     loginPage.visitHomePage()
     loginPage.openLoginPage()
     loginPage.login(userData.userAdmin.username, userData.userAdmin.password)
+    cy.contains('button', 'Logout').should('be.visible')
+    cy.contains('button', 'Create New Hero').should('be.visible')
+
     })
 })
