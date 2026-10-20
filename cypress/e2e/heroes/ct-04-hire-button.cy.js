@@ -13,7 +13,12 @@ describe('CT-04 - Hire hero', () => {
     loginPage.login(userData.userDefault.username, userData.userDefault.password)
   })
 
-  it('should hire a hero successfully', () => {
+
+  it('should open the hire confirmation modal', () => {
     hireHeroPage.clickHireButton()
+    cy.contains('h3', 'Hire Hero?').should('be.visible')
+    cy.contains('button', 'Yes').should('be.visible')
+    cy.contains('button', 'No').should('be.visible')
   })
+
 })
