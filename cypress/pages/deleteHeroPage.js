@@ -9,8 +9,15 @@ class DeleteHeroPage {
     return selectors
   }
 
-  clickDeleteButton() {
-    cy.get(this.selectorsList().deleteButton).eq(0).click()
+ clickDeleteButton(heroName) {
+  cy.get('[data-cy="hero-card"]')
+    .filter((_, card) =>
+      Cypress.$(card).find('[data-cy="name"]').text().trim() === heroName
+    )
+    .should('have.length', 1)
+    .find(this.selectorsList().deleteButton)
+    .click()
+
   }
 
   confirmDelete() {
