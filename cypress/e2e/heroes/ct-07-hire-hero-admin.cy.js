@@ -13,8 +13,26 @@ describe('CT-07 - Hire hero as admin', () => {
     loginPage.login(userData.userAdmin.username, userData.userAdmin.password)
   })
 
+
   it('should hire a hero successfully as admin', () => {
-    hireHeroPage.clickHireButton()
-    hireHeroPage.confirmHireAsAdmin()
+    cy.request('GET', 'http://localhost:3001/heroes').then(({ body: heroes }) => {
+      const initialSaves = new Map(heroes.map(hero => [hero.id, hero.saves]))
+
+      cy.intercept('PATCH', '**/heroes/*').as('hireHero')
+
+      hireHeroPage.clickHireButton()
+      cy.contains('h3', 'Hire Hero?').should('be.visible')
+      hireHeroPage.confirmHireAsAdmin()
+
+      cy.wait('@hireHero').then(({ request, response }) => {
+        const heroId = Number(request.body.id)
+
+        expect(response.statusCode).to.eq(200)
+        expect(initialSaves.has(heroId)).to.eq(true)
+        expect(request.body.saves).to.eq(initialSaves.get(heroId) + 1)
+        expect(response.body.id).to.eq(heroId)
+        expect(response.body.saves).to.eq(request.body.saves)
+      })
+    })
   })
 })
