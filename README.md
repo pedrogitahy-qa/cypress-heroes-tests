@@ -277,13 +277,22 @@ The automated scenarios are located in `cypress/e2e/heroes/`.
 
 ### 5. Run tests in headless mode
 
-Alternatively, execute:
+
+With the Cypress Heroes frontend and backend running, execute the complete automated test suite:
 
 ```bash
-npx cypress run
+npm test
 ```
 
-This runs the automated test suite without opening the interactive Cypress Test Runner.
+This command runs all 12 Cypress specification files in headless mode, covering 15 automated tests.
+
+Alternatively, run the suite directly with Cypress:
+
+```bash
+npx cypress run --spec "cypress/e2e/heroes/*.cy.js"
+```
+
+**Validated execution:** 12 specification files, 15 passing tests, 0 failures (October 22, 2026).
 
 The Cypress Heroes application must remain running during test execution.
 
