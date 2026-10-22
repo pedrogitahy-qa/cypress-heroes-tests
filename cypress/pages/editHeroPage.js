@@ -14,12 +14,18 @@ class EditHeroPage {
     return selectors
   }
 
-  clickEditButton() {
-    cy.get(this.selectorsList().editButton).eq(0).click()
-  }
+  clickEditButton(heroName) {
+  cy.get('[data-cy="hero-card"]')
+    .filter((_, card) =>
+      Cypress.$(card).find('[data-cy="name"]').text().trim() === heroName
+    )
+    .should('have.length', 1)
+    .find(this.selectorsList().editButton)
+    .click()
+}
 
-  editHeroSuccessfully(name, price, fans, saves) {
-    this.clickEditButton()
+editHeroSuccessfully(heroName, name, price, fans, saves) {
+    this.clickEditButton(heroName)
     cy.get(this.selectorsList().nameField).clear().type(name)
     cy.get(this.selectorsList().priceField).clear().type(price)
     cy.get(this.selectorsList().fansField).clear().type(fans)
@@ -28,8 +34,8 @@ class EditHeroPage {
     cy.get(this.selectorsList().submitButton).eq(2).click()
   }
 
-  editHeroAndClearField(fieldToClear, name, price, fans, saves) {
-    this.clickEditButton()
+editHeroAndClearField(heroName, fieldToClear, name, price, fans, saves) {
+    this.clickEditButton(heroName)
 
     if (fieldToClear !== 'name') {
       cy.get(this.selectorsList().nameField).clear().type(name)
